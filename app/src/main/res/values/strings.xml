@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Demo_EventBus</string>
+    <!-- 产品数据七牛云存储外链地址 http://p0tvhzxf8.bkt.clouddn.com/Products.java-->
+    <string name="baseUrl">http://p0tvhzxf8.bkt.clouddn.com/</string>
+</resources>

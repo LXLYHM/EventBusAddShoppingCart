@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="#ffffff"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgProducts"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/productsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="水果名称"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="135dp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_vertical">
+
+            <Button
+                android:id="@+id/bt_float"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/et_number"
+                android:background="@mipmap/home_less" />
+
+            <com.dawnling.www.widget.MyEditText
+                android:id="@+id/et_number"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/bt_add"
+                android:background="@color/colorwindowBackground"
+                android:cursorVisible="false"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="4"
+                android:minWidth="31dp"
+                android:padding="5dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/bt_add"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:background="@mipmap/home_add" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
